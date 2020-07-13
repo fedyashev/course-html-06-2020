@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-forms</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="forms">
+        <div class="container">
+            <form action="" method="GET">
+                <div>
+                    <label for="inpUsername">Username</label>
+                    <input type="text" id="inpUsername" name="username" placeholder="Username">
+                </div>
+
+                <div>
+                    <label for="inpPassword">Password</label>
+                    <input type="password" id="inpPassword" name="password">
+                </div>
+
+                <div>
+                    <label for="inpEmail">Email</label>
+                    <input type="email" id="inpEmail" name="email">
+                </div>
+
+                <div>
+                    <label for="inpAge">Age</label>
+                    <input type="number" id="inpAge" name="age">
+                </div>
+
+                <div>
+                    <label for="inpTel">Tel</label>
+                    <input type="tel" id="inpTel" name="tel">
+                </div>
+
+                <div>
+                    <label for="IsMale">IsMale</label>
+                    <input type="checkbox" id="IsMale" name="isMale">
+                </div>
+
+                <div>
+                    <input type="radio" id="rbHtml" name="couse" value="html">
+                    <label for="rbHtml">Html</label>
+
+                    <input type="radio" id="rbCss" name="couse" value="css">
+                    <label for="rbCss">Css</label>
+
+                    <input type="radio" id="rdJs" name="couse" value="js">
+                    <label for="rdJs">Js</label>
+                </div>
+
+                <div>
+                    <label for="inpMessage">Message</label>
+                    <textarea name="message" id="inpMessage" cols="30" rows="10" placeholder="message"></textarea>
+                </div>
+
+                <div>
+                    <select name="food" id="inpFood">
+                        <option value="1">Apple</option>
+                        <option value="2">Peach</option>
+                        <option value="3">Cherry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="container">
+            <h2>Your message</h2>
+            <div class="form-container">
+                <form action="/">
+                    <div>
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Your Email">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

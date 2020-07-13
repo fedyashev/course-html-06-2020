@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container  {
+    width: 575px;
+    margin: 0 auto;
+}
+
+.forms textarea::placeholder {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: #009;
+}
+
+/* FEEDBACK */
+
+.feedback form {
+    display: flex;
+}
+
+.feedback form input[type="text"],
+.feedback form input[type="email"] {
+    display: block;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* END FEEDBACK */

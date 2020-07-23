@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+/* CARDS */
+
+.card {
+    /* flex: 1; */
+    flex: 1 1 200px;
+    height: 200px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: lightcoral;
+}
+
+@media (max-width: 1199px) {
+    .card {
+        background: lightgreen;
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .card {
+        background: lightseagreen;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        background: magenta;
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        background: orange;
+        flex: 1 1 100%;
+    }
+}
+
+/* END CARDS */
+
+/* SLIDER */
+
+.slide {
+    flex: 1 1 auto;
+    height: 135px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background: orange;
+}
+
+@media (max-width: 1199px) {
+    .slide {
+        background: orchid;
+    }
+
+    .slide:nth-child(4) {
+        display: none;
+    }
+}
+
+/* END SLIDER */
+
+/* HEADER */
+
+.header {
+    padding: 15px 0;
+    background: lightblue;
+}
+
+.header .logo {
+    flex: 0 0 200px;
+    height: 50px;
+    background: #900;
+}
+
+.header .menu {
+    flex: 1;
+    height: 50px;
+    background: #090;
+}
+
+.header .btn-create {
+    flex: 0 0 100px;
+    height: 50px;
+    background: #009;
+}
+
+.header .btn-burger {
+    display: none;
+    flex: 0 0 50px;
+    height: 50px;
+    background: #333;
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .header .container {
+        justify-content: space-between;
+    }
+
+    .header .menu {
+        display: none;
+    }
+
+    .header .btn-create {
+        display: none;
+    }
+
+    .header .btn-burger {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
+/* END HEADER */

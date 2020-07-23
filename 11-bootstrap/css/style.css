@@ -1,0 +1,44 @@
+/* BOXES */
+
+.box {
+    height: 100px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: orange;
+}
+
+.box-red {
+    background: red;
+}
+
+.box-green {
+    background: green;
+}
+
+/* END BOXES */
+
+/* BOXES OFFSET */
+
+.boxes-offset .box {
+    background: palegreen;
+}
+
+/* END BOXES OFFSET */
+
+/* MENU BAR */
+
+.menu-bar .menu {
+    height: 100%;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-bar .menu li {
+    margin-left: 15px;
+}
+
+/* END MENU BAR */
